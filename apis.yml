@@ -1,25 +1,71 @@
 aid: sigmaratings-com
+
 name: Sigma Ratings
-description: 'Sigma Ratings is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by techstars) and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Sigma Ratings, operating as Sigma360, provides an AI‑powered financial crime compliance automation platform that streamlines KYC, AML, and risk management processes. The solution offers real‑time risk coverage, reduces false positives by up to 93%, and integrates with existing financial systems to help institutions meet regulatory requirements efficiently.'
+
 url: https://raw.githubusercontent.com/api-evangelist/sigmaratings-com/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-24 (modular-v1; was harvest)
+
+image: https://www.sigma360.com/wp-content/uploads/2023/01/logo.png
+
 specificationVersion: '0.20'
+
 created: '2026-10-24'
+
 modified: '2026-10-24'
+
 tags:
 - Company
-apis: []
+- FinTech
+- Compliance
+- AI
+- RiskManagement
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- techstars
+
 common:
+- type: Hosts
+  url: hosts/sigmaratings-com-hosts.yml
+- type: Vendors
+  url: vendors/sigmaratings-com-vendors.yml
+- type: PrivacyPolicy
+  url: https://www.sigma360.com/privacy-policy/
+- type: Newsroom
+  url: https://www.sigma360.com/knowledge/press/
+- type: Documentation
+  url: https://docs.sigma360.com/
+- type: DomainSecurity
+  url: security/sigmaratings-com-domain-security.yml
 - type: Website
   url: https://sigmaratings.com/
+
+apis: []
+
+x-backed-by:
+- techstars
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Sigma Ratings developer pages return JavaScript-rendered HTML with no machine-readable API spec.
+  evidence:
+    - url: https://www.sigma360.com/
+      status: 200
+  checked: '2026-10-24'
+x-enrichment:
+  date: '2026-10-24'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

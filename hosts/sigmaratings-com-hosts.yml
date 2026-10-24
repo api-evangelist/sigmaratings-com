@@ -1,0 +1,75 @@
+generated: '2026-10-24'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 5
+  own: 2
+  other_domain: 3
+  platform: 0
+  roles:
+  - api
+  - docs
+  - legal
+  - website
+hosts:
+- host: api.sigma360.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: sigma360.com
+  role: api
+  relation: other-domain
+- host: api.sigmaratings.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: sigmaratings.com
+  role: api
+  relation: own
+- host: docs.sigma360.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - Documentation
+  serves:
+  - docs
+  registrable_domain: sigma360.com
+  role: docs
+  relation: other-domain
+- host: sigmaratings.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - cdn
+  vendor: cloudfront
+  registrable_domain: sigmaratings.com
+  role: website
+  relation: own
+- host: www.sigma360.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - PrivacyPolicy
+  - Newsroom
+  serves: []
+  registrable_domain: sigma360.com
+  role: legal
+  relation: other-domain

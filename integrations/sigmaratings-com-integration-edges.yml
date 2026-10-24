@@ -1,0 +1,22 @@
+generated: '2026-10-24'
+method: none
+source:
+- https://zapier.com/apps/sigmaratings-com/integrations
+- https://zapier.com/apps/sigmaratings/integrations
+- https://zapier.com/apps/sigma-ratings/integrations
+- https://n8n.io/integrations/sigmaratings-com/
+- https://n8n.io/integrations/sigmaratings/
+- https://composio.dev/toolkits/sigmaratings-com
+- https://monid.ai/tools/sigmaratings-com
+checked:
+- https://composio.dev/toolkits/sigmaratings-com
+- https://monid.ai/tools/sigmaratings-com
+- https://n8n.io/integrations/sigmaratings-com/
+- https://n8n.io/integrations/sigmaratings/
+- https://zapier.com/apps/sigma-ratings/integrations
+- https://zapier.com/apps/sigmaratings-com/integrations
+- https://zapier.com/apps/sigmaratings/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
